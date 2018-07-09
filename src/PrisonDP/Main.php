@@ -46,7 +46,7 @@ class Main extends PluginBase implements Listener{
   
   public $prefix = "§l§f[Mine§6Space]";  
   public $count = 0;
-  public $rank = 0;
+  public $rank = "";
   
   public $loding = false;
   public $lodings = 5;
@@ -1516,6 +1516,7 @@ class Main extends PluginBase implements Listener{
 		    
 		    if($this->rank == "[A]"){
 			    $this->count = $this->count - 2000;
+			    $this->rank = "[B]";
 			    $sender->sendMessage("$this->prefix Your Rank now is [B]");
 		    } elseif {
 			    $this->count < 2000;
@@ -1525,6 +1526,7 @@ class Main extends PluginBase implements Listener{
 		    
 		    if($this->rank == "[B]"){
 			    $this->count = $this->count - 3000;
+			    $this->rank = "[C]";
 			    $sender->sendMessage("$this->prefix Your Rank now is [C]");
 		    } elseif {
 			    $this->count < 3000;
@@ -1534,6 +1536,7 @@ class Main extends PluginBase implements Listener{
 		    
 		    if($this->rank == "[C]"){
 			    $this->count = $this->count - 5000;
+			    $this->rank = "[D]";
 			    $sender->sendMessage("$this->prefix Your Rank now is [D]");
 		    } elseif {
 			    $this->count < 5000;
@@ -1543,6 +1546,7 @@ class Main extends PluginBase implements Listener{
 		    
 		    if($this->rank == "[D]"){
 			    $this->count = $this->count - 6000;
+			    $this->rank = "[E]";
 			    $sender->sendMessage("$this->prefix Your Rank now is [E]");
 		    } elseif {
 			    $this->count < 6000;
@@ -1552,6 +1556,7 @@ class Main extends PluginBase implements Listener{
 		    
 		    if($this->rank == "[E]"){
 			    $this->count = $this->count - 8000;
+			    $this->rank = "[F]";
 			    $sender->sendMessage("$this->prefix Your Rank now is [F]");
 		    } elseif {
 			    $this->count < 8000;
